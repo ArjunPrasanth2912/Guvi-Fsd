@@ -1,2 +1,39 @@
 Differences Between Http1.1 and Http2
 ---------------------------------------
+Before going to the topic let's see what is HTTP and it's methods:-
+
+HTTP stands for HYPER TEXT TRANSFER PROTOCOL which works in the Network layer of OSI model to transfer data.
+HTTPS stands for HYPER TEXT TRANSFER PROTOCOL SECURED.
+HTTP works between the client and the server as the request-response protocol.
+HTTP has list of methods to perform activities on a data: POST,GET,PUT,DELETE and some more.
+each method has a purpose to perform on a data.
+
+HTTP/1.1
+The first version of HTTP was called as the HTTP/1.1 and created in the year 1997.For example when you make a request to the 
+the server for a html page & server responds to you as a resource the respective html page. 
+Before sending the request and the response there is a TCP connection established between client & server. again you 
+make a request to the server for image img.jpg & the server gives a response as an image img.jpg. the connection was not 
+lost here after the first request because we add a keep-alive header which is the part of the request so there is an open 
+connection between the server & client. there is a persistent connection which means several requests & responses are merged 
+in a single connection. 
+drawbacks:-  The first problem is HTTP/1.1 transfer all the requests & responses in the plain text message form. The second 
+one is head of line blocking in which TCP connection is blocked all other requests until the response does not receive. 
+all the information related to the header file is repeated in every request.
+
+HTTP/2 
+It was developed over the SPDY protocol. HTTP/2 works on the binary framing layer instead of textual that converts all the messages 
+in binary format. it works on fully multiplexed that is one TCP connection is used for multiple requests. HTTP/2 uses 
+HPACK which is used to split data from header. it compresses the header. The server sends all the other files like CSS & JS without the 
+request of the client using the PUSH frame.
+benefits:-Binary protocols are more efficient to parse.more compact and more efficient over the network.has multiplexing and
+very fast.
+
+Differences:
+HTTP/1.1 works on text format whereas the HTTP/2 works on binary format.
+Until all the resources are recived the head of the line blocks the other all requests in HTTP/1.1 whereas in HTTP/2 all the requests 
+are combined into one(Multiplexing)so one TCP connection is required for multiple requests.in HTTP/1.1 data is compressed by itself
+In HTTP/2 data is been compressed by HPACK(Header Compression algoritham for HTTP/2).The page is been loaded very fast using HTTP/2 
+when compared to HTTP1.It uses requests resource Inlining for use getting multiple pages wheras HTTP/2 uses PUSH frame server that 
+collects all multiple pages.Header Compression is faster and more efficient in HTTP/2 when compared to HTTP1.
+
+----------
