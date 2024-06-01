@@ -1,0 +1,57 @@
+This Blog gives a brief explanantion on Javascript Objects
+--------------------------------------------------------
+Javascript objects is a collection of key and value pair which is used to store various data.anything and everything in a
+Javascipt is a object.the javascript objects can be created using flower brackets. the left term is the key and the right
+Term are the values of that key.the values can be of any datatypes like str,number etc.
+
+down below objects has been represented in detail:-
+
+let data{
+    name:"arjun",
+    age:23
+}
+//this is how a object is created and the "name" and "age" are the Keys and "arjun" and "23" are the values of that keys.
+
+Now let's add some new set of key and value to the object.
+
+data.dob="29/12/2000";
+data["is married"]=false;
+
+//Above we have created two new entities for the object and added it now we console log the object data this new data's also
+Will be added.
+let data{
+    name:"arjun",
+    age:23,
+    dob="29/12/2000",
+    age:23
+}
+//Comma must be used till the last before value.
+
+In objects elements can be accessed and added in two ways:
+one is using                     -object name."keyname"="value";
+and the other is using Array of  -object["isMarried"]=false;
+
+by this two ways elements can be added and accessed .
+the array of method can be used when working on loops for dynamic adding.
+
+Now lets see how to access the elements in a object:
+As discussed before elements can be accessed by . and array of methods.
+
+data.name//"arjun"
+data.age//23
+data["dob"]//"29/12/2000"
+
+So this is how we can access the elements of an object.
+
+Now let's see how to update values in an object.
+
+data.age=30;
+data["dob"]="29/12/1993";
+
+Now let's see how to delete a elements in an object.
+
+delete data.age;
+
+Similarly thera are many properties for the object to access or modify the elements.
+
+---------------------------------------------------------------
