@@ -1,4 +1,4 @@
-This Blog gives a brief explanantion on Javascript Objects
+This Blog gives a brief explanantion on Javascript Objects:
 --------------------------------------------------------
 Javascript objects is a collection of key and value pair which is used to store various data.anything and everything in a
 Javascipt is a object.the javascript objects can be created using flower brackets. the left term is the key and the right
