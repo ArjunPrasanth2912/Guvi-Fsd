@@ -1,2 +1,25 @@
-Difference Between Document and Window Objects:-
+Blog on difference Between Document and Window Objects
 ----------------------------------------------
+First let's look into the what is document and window objects:
+
+Window
+Window is nothing but the tabs that you see in a brower technically they are called as windows and they are "Global objects". it is the root object of a DOM
+Window has many functionalities to do such as "alert,navigation,timerange" and many more.the first thing that is loaded in the browser is the window amd the 
+properties releated to that window are stored in the window object.So once a window is loaded and then the document is loadied inside that window.
+
+Document
+The object which is loaded inside the window is the document and the properties related to that are stored in the document object.it is the root node of an 
+Html document.Some of it's properties are the "addeventlistener,cookie" and many more.we can do DOM manipulation using this.
+
+Now let's see the differnce between Document and Window Object:
+
+	
+Document                                                               Window
+It is loaded inside the window or browser. 	                          It is the  browser window in which you are seeing the content(which is the document).
+It's properties are stored in document object. 	                      It's properties are stored in  window object.
+It is loaded after the loading window because the window contains
+ a document. 	                                                      It is loaded before the document because window container document.
+It is the root element of the document object model. 	              The window is the global element for all objects, functions, etc.
+It is an object of window. 	                                          It is an object of the browser.
+ 	  
+
