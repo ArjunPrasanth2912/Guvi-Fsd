@@ -1,1 +1,54 @@
 Day-3 Tasks
+
+1)Do the below programs in anonymous function & IIFE
+
+1(a)-Print odd numbers in an array
+---------------------
+// Getting input via STDIN
+const readline = require("readline");
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+const userInput = [];
+
+inp.on("line", (data) => {
+  userInput.push(Number(data));
+});
+
+inp.on("close", () => {
+  //1(a)-Print odd numbers in an array
+
+  
+  
+  
+  
+ //IIFE function
+ let input;
+  (function(input){
+      input=userInput.map(Number);
+      console.log("Given Array =",input);
+      let odd=[];
+      let even=[];
+      
+  for(var i=0;i<input.length;i++){
+      
+      if(input[i]%2==0){
+          //console.log("even");
+           even.push(input[i]);
+          
+      }
+      else
+      {
+          //console.log("odd");
+          odd.push(input[i]);
+      }
+  }
+  console.log("Odd Numbers =",odd);
+  console.log("Even Numbers =",even);
+  })(userInput);
+
+
+  
+});
