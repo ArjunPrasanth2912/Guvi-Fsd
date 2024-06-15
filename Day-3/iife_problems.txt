@@ -47,6 +47,7 @@ inp.on("close", () => {
   }
   console.log("Odd Numbers =",odd);
   console.log("Even Numbers =",even);
+  
   })(userInput);
 
 
