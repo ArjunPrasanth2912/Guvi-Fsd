@@ -1,0 +1,120 @@
+2.Do the below programs in arrow functions.
+
+-----------
+
+2(a)Print odd numbers in an array
+const oddeven =input=>{
+    console.log("Given Array =",input);
+      let odd=[];
+      let even=[];
+      
+  for(var i=0;i<input.length;i++){
+      
+      if(input[i]%2==0){
+          //console.log("even");
+           even.push(input[i]);
+          
+      }
+      else
+      {
+          //console.log("odd");
+          odd.push(input[i]);
+      }
+  }
+  console.log("Odd Numbers =",odd);
+    
+    
+};
+oddeven([1,2,3,4,5,6,7,8,9,10]);
+
+---------------
+Output:
+
+Given Array = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+Odd Numbers = [ 1, 3, 5, 7, 9 ]
+
+------------------------------------------------------------------------------------------------
+
+2(b)Convert all the strings to title caps in a string array
+
+
+let str=value=>{
+    value=value.toLowerCase();
+    value=value.split(' ');
+    let answer=[];
+    for(let i=0;i<value.length;i++)
+    {
+        answer[i]=value[i].charAt(0).toUpperCase()+value[i].slice(1);
+        //console.log(answer[i]);
+        //final.push(value[i]);//
+        
+    } 
+    answer=answer.join(' ');
+    console.log(answer);
+};
+str("ARTHUR MORGAN");
+
+-----------
+Output:
+
+Arthur Morgan
+
+---------------------------------------------------------------------------------------------------
+
+2(c)Sum of all numbers in an array
+
+const arr=inp=>{
+  console.log("Given Array",inp);
+  let final=0;
+  for(var i=0;i<inp.length;i++){
+    final=final+inp[i];
+  }
+  console.log("Sum",final);
+
+};
+
+arr([5,10,15,20,25]);
+
+-------------
+Output:
+
+Given Array [ 5, 10, 15, 20, 25 ]
+Sum 75
+
+---------------------------------------------------------------------------------------------------
+
+2(d)Return all the prime numbers in an array
+
+let primecheck=n=>{
+    if(n<2){
+       console.log("Give number greater than 2");//Since lesser than 2 is not a prime number
+    }
+    
+    for(let i=2;i<n;i++)
+    {
+        if(n%i==0){
+            console.log("Not a prime Number");
+        }
+        else{
+            console.log("Is a prime Number");
+        }
+    }
+    
+};
+primecheck(3);
+------------
+Output:
+
+Is a prime Number
+
+-------------------------------------------------------------------------------------------------
+2(g)Remove duplicates from an array
+
+const rmdup=array=>
+{
+    let dup = [...new Set(array)];
+   console.log(dup);
+};
+rmdup([1,1,1,3,3,3,5,6,8,8,8]);
+
+-----------------------
