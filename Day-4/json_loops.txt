@@ -1,0 +1,39 @@
+let resume = [{
+    "Name" : "Arjun prasanth", 
+    "email": "arjunsampath2000.aa@gmail.com",
+    "degree": "B.Tech",
+    "Address": ["Tamilnadu","chennai","chrompet"]
+},
+{
+    "College": "HITS padur",
+        "department": "CSE",
+        "gpa": 7.8
+}];
+
+//for loop
+
+for(var i=0;i<resume.length;i++)
+{
+  console.log(resume[i]);
+
+}
+
+//for in
+
+for (var i in resume)
+{
+    console.log(resume[i]);
+}
+
+//for each
+
+resume.forEach(function(value){
+    console.log(value);
+});
+
+//for of
+
+for(var j of resume)
+{
+    console.log(j);
+}
