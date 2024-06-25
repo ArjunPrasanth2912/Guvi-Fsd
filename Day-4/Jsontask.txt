@@ -1,0 +1,31 @@
+let Resume={
+    "Basic info": {
+      "name": "Arjun Prasanth",
+      "email": "arjunsampath2000.aa@gmail.com",
+      "degree": "B.Tech",
+      "Address": ["Tamilnadu","chennai","chrompet"]
+      
+    },
+    
+    "educational details": [
+      {
+        "College": "HITS padur",
+        "department": "CSE",
+        "gpa": 7.8
+      }
+    ],
+    "skills": [
+      {
+        "name": "AEM-content authoring",
+        "project":"SAAS Migration" 
+      }
+    ],
+    
+    "interests": [
+      {
+        "name": ["Video Editing","cricket","pc games"]
+      }
+    ]
+  }
+  console.log(Resume);
+  
