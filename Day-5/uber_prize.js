@@ -13,4 +13,4 @@ class Uber{
 }
 
 const rate=new Uber(15,10);
-console.log(rate.uberPrize());
+console.log(rate.uberPrize());0
