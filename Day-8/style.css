@@ -1,0 +1,28 @@
+.mala{
+    font-size:20px;
+    color:royalblue;
+    text-align:center;
+    cursor:pointer;
+    
+     }
+
+     h1{
+        font-size:100px;
+        color:rgb(226, 212, 17);
+        text-align:center;
+        cursor:pointer;
+     }
+     button{
+        font-size:100px;
+        color:black;
+        background-color: aqua;
+        border:10px;
+        border-radius: 50px;
+        text-align:center;
+        cursor:pointer;
+     }
+
+     #uniqueid{
+        color:rebeccapurple;
+        background-color: rgb(219, 31, 157);
+     }
